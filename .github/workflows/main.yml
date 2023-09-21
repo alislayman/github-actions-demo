@@ -11,4 +11,17 @@ jobs:
 
     steps:
       - name: Echo a Message
-        run: echo "Hello, GitHub Actions!"
+        run: |
+          echo "Sleeping 10 seconds"
+          sleep 10
+          echo "Hello, GitHub Actions!"
+          
+        
+
+  myjob:
+    runs-on: ubunto-latest
+
+    steps:
+      - name: second Job
+        run: echo "running"
+      
